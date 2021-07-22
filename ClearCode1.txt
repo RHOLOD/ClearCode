@@ -1,0 +1,13 @@
+﻿massiv - conditionOfAllDoors (condition_of_all_doors) // массив состояния всех дверей
+str - theResultOfTheAlfoithmExecution (the_reuslt_of_the_algorithm_execultion) // результат выполнения алгоритма
+bolk - theStateOfTheAbilityToArrangeTheArray (the_state_of_the_ability_to_arrange_the_array) // состояние возможности упорядочить массив
+M - theFinalLengthOfTheList (the_final_length_of_the_list) // конечная длина списка
+sum - theSumOfAllTheResultValues (the_sum_of_all_the_result_values) // сумма всех значений результата
+b - theParityValueOfTheResult (the_parity_value_of_the_result) // значение четности  результата
+numbers - theRezultOfTheTransformationOfTheInputArray (the_result_of_the_transformation_of_the_input_array) // результат трансформации входного массива
+massivE - theResultOfTheRotationOfTheArray (the_result_of_the_rotation_of_the_array) // результат вращения массива
+ko - arrayRotationCounter (array_rotation_counter) // счетчик вращения массива
+ki - convertingAnArrayElementToString (converting_an_array_element_to_string) // преобразование элемента массива в строку
+misis - currentStateOfTreeDevelopment (current_state_of_tree_development) // текущие состояние  развития дерева
+n - treeLifeCounter (tree_life_counter) // счетчик жизни дерева 
+gig - stringAddingElementsToAnArray (string_adding_elements_to_an_array) // строка добавление элементов в массив
