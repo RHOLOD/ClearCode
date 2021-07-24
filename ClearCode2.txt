@@ -1,0 +1,21 @@
+﻿6.1
+data - personalDataOfTheUser (personal_data_of_the_user) //личные данные пользователя
+counter - treeLifeCounter (tree_life_counter) // счетчик жизни дерева
+volume - numberOfDoors (numver_of_doors) // количество дверей
+sum - theSumOfTheDoubleTransformation (the_sum_of_the_double) // сумма двойной трансформации
+n - numberOfRepeatedCharacters (number_of_repeated_characters) // количество повторяющихся знаков 
+6.2
+matrixOfElements (matrix_of_elements) // матрица элементов
+stringValidity (string_validity) // валидность строки
+parityOfTheYear (parity_of_the_year) // четность года
+transformableArray (transformable_array) // трансформируемый массив
+6.3
+validationCheck (validation_check) // проверка валидности
+movesDetected (moves_detected) // ходики обнаружены
+secretKey (secret_key) // секретный ключ
+6.4
+massivS - arrayOfInputSummaries (array_of_input_summaries) // массив входных сводок 
+rezult - rezultOfTheSum (result_of_the_sum) // результат суммы
+strk - stringWithoutSpaces (string_without_spaces) // строка без пробелов
+n - stringLength (string_length) // длина строки
+sq - squareRootNumber (square_root_number) // квадратный корень числа
