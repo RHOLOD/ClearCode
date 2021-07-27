@@ -7,7 +7,7 @@ ballRea - isReachedTheBall (is_reached_the_ball) // достиг шара
 7.2
 balk - found // обнаружил число в массиве
 flagE - done // завершить цикл 
-falgU - success // обнаружил сопрадения элемента
+falgU - success // обнаружил совпадение элемента
 lol - error // найдена ошибка последовательности ряда чисел
 7.3
 i - loopString (loop_string) // цикл строк
