@@ -1,0 +1,26 @@
+﻿7.1
+counterU - isCounterOn (is_counter_on) // счетчик включен
+tuchesB - isTouchesBall (is_touches_ball) // касание шара
+collisionC - isCollisionOfCubes (is_collision_of_cubes) // столкновение куба
+distanceP - isPassedTheDistance (is_passed_the_distance) // прошел расстояние
+ballRea - isReachedTheBall (is_reached_the_ball) // достиг шара
+7.2
+balk - found // обнаружил число в массиве
+flagE - done // завершить цикл 
+falgU - success // обнаружил сопрадения элемента
+lol - error // найдена ошибка последовательности ряда чисел
+7.3
+i - loopString (loop_string) // цикл строк
+j - loopColumns (loop_columns) // цикл столбцов
+k - loopRangeOfNumbers (loop_range_of_numbers) // цикл диапозона чисел
+7.4
+random1 - beginDeparutreDistance (begin_deparutre_distance) // начало дистанции отлета
+random2 - endDeparutreDistance (end_deparutre_distance) //конец дистанции отлета
+moveObject1 - startMoveObject - (start_move_object) // старт движения объекта
+moveObject2 - finishMoveObject - (finish_move_object) // финиш движения объекта
+speed1 - formardSpeedCube - (formard_speed_cube) // вперёд скорость куба
+speed2 - backwardSpeedCube - (backward_spead_cube) // назад сорость куба
+7.5
+mex - lengthOfSecondArray (length_of_second_array) // длина второго массива
+sum - sumOfSecondArray (sum_of_second_array) // сумма второго массива
+str - stringElementOfArray (string_element_of_array) // строка элемента массива
