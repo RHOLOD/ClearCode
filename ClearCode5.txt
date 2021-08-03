@@ -11,5 +11,5 @@ Clos - СlearTheFields // очистить поля
 ClickBu - OutputOfArray // вывод массива
 Sortir - SortingByCost // сортировка по стоимости 
 Saves - SavingInFile // сохранение в файл
-Pribol - CalculatingProfit // сортировка по стоимости 
+Pribol - CalculatingProfit // расчет прибыли 
 Pytevka - Warehouse//склад товаров
