@@ -6,13 +6,13 @@ ball - GameBalls // игра шариков
 calcul  - Calculator // калькулятор
 
 3.2 
-rachet - writingToStructure (writing_to_structure) // запись в структуру
-clos - clearTheFields (clear_the_fields)// очистить поля
-clickBu - outputOfArray (output_of_array)// вывод массива
-sortir - sortingByCost (sorting_by_cost)// сортировка по стоимости 
-saves - savingInFile (saving_in_file)// сохранение в файл
-pribol - calculatingProfit (calculating_profit) // расчет прибыли 
-word - wordSearch (word_search) // поиск слова
+Rachet - WritingToStructure (writing_to_structure) // запись в структуру
+Clos - ClearTheFields (clear_the_fields)// очистить поля
+ClickBu - OutputOfArray (output_of_array)// вывод массива
+Sortir - SortingByCost (sorting_by_cost)// сортировка по стоимости 
+Saves - SavingInFile (saving_in_file)// сохранение в файл
+Pribol - CalculatingProfit (calculating_profit) // расчет прибыли 
+Word - WordSearch (word_search) // поиск слова
 Sclad - Warehouse // склад товаров
 Magazin - Shop // магазин
 Pytevka - TourOperator // туроператор
