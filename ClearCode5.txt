@@ -6,10 +6,17 @@ ball - GameBalls // игра шариков
 calcul  - Calculator // калькулятор
 
 3.2 
-rachet - writingToStructure // запись в структуру
-clos - clearTheFields // очистить поля
-clickBu - outputOfArray // вывод массива
-sortir - sortingByCost // сортировка по стоимости 
-saves - savingInFile // сохранение в файл
-pribol - calculatingProfit // расчет прибыли 
-pytevka - warehouse // склад товаров
+rachet - writingToStructure (writing_to_structure) // запись в структуру
+clos - clearTheFields (clear_the_fields)// очистить поля
+clickBu - outputOfArray (output_of_array)// вывод массива
+sortir - sortingByCost (sorting_by_cost)// сортировка по стоимости 
+saves - savingInFile (saving_in_file)// сохранение в файл
+pribol - calculatingProfit (calculating_profit) // расчет прибыли 
+word - wordSearch (word_search) // поиск слова
+Sclad - Warehouse // склад товаров
+Magazin - Shop // магазин
+Pytevka - TourOperator // туроператор
+Avia - AirTicketOffice // авиакасса
+ShopBook - BookStore // книжный магазин
+Hozaistveniy - HardwareStore // Хозяйственный магазин
+Host - Hotel // гостиница
