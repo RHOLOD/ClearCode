@@ -1,0 +1,15 @@
+﻿3.1
+Database1 - CustomerBase // клиенская база
+mac - CalculatorIngredients // калькулятор ингредиентов
+Solo - CounterCharacter // счетчик символов
+ball - GameBalls // игра шариков
+calcul  - Calculator // калькулятор
+
+3.2 
+Rachet - WritingToStructure // запись в структуру
+Clos - СlearTheFields // очистить поля
+ClickBu - OutputOfArray // вывод массива
+Sortir - SortingByCost // сортировка по стоимости 
+Saves - SavingInFile // сохранение в файл
+Pribol - CalculatingProfit // сортировка по стоимости 
+Pytevka - Warehouse//склад товаров
