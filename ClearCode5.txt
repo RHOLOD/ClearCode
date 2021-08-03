@@ -6,10 +6,10 @@ ball - GameBalls // игра шариков
 calcul  - Calculator // калькулятор
 
 3.2 
-Rachet - WritingToStructure // запись в структуру
-Clos - СlearTheFields // очистить поля
-ClickBu - OutputOfArray // вывод массива
-Sortir - SortingByCost // сортировка по стоимости 
-Saves - SavingInFile // сохранение в файл
-Pribol - CalculatingProfit // расчет прибыли 
-Pytevka - Warehouse//склад товаров
+rachet - writingToStructure // запись в структуру
+clos - clearTheFields // очистить поля
+clickBu - outputOfArray // вывод массива
+sortir - sortingByCost // сортировка по стоимости 
+saves - savingInFile // сохранение в файл
+pribol - calculatingProfit // расчет прибыли 
+pytevka - warehouse // склад товаров
