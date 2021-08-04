@@ -1,0 +1,12 @@
+﻿Priced - CalculatePrice (calculate_price) // рассчитать цену
+Seaarch - SearchInDatabase (search_in_database) // поиск в базе
+Down - DownloadDatabase (download_database) // загрузить базу
+Perechet - RecalculateValuesInTable (recalculate_values_in_table) // пересчитать значения в таблице
+SaveT - SaveTableInDatabase (save_table_in_database) // сохранить таблицу в базу
+DeletStrok - DeleteRowFromTable (delete_row_from_table) // удалить строку из таблицы
+AddTable - AddEntryFromFinalTable (add_entry_from_final_table) // добавить запись в итоговую таблицу
+RachetTable - CalculateFinalPrice (calculate_final_price) // рассчитать итоговую цену
+DeletTable - DeleteEntryInFinalPrice (delete_entry_in_final_price) // удалить запись в итоговой таблице
+СleatTable - ClearFinalTable (clear_final_table) // очистить итоговую таблицу
+SaveTable - SaveFinalTable (save_final_table) // сохранить итоговую таблицу
+Sortir - SortTableAlphabetically ( sort_table_alphabetically) // сортировать таблицу по алфавиту
