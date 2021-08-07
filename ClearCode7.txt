@@ -1,10 +1,10 @@
-﻿3.1
-abstract public CreateTransport() // создать транспорт
-abstract public PlanCollision() // планировать столкновение
-abstract public PlanMouvement() // планировать движение
+3.1
+public abstract MilitaryEquipment CreateMachine() // создать машину
+public abstract MilitaryEquipment PlanCollision() // планировать столкновение
+public abstract MilitaryEquipment PlanMouvement() // планировать движение
 
 3.2
-interface СMovementObject // движение объекта
+interface MilitaryEquipment // боевая техника
 interface СRoomFactory // фабрика помещений
 interface СTankBodyFactory // фабрика тела танка
 abstract class ObjectBody // Корпус объекта
