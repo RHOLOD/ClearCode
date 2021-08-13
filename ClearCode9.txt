@@ -1,0 +1,68 @@
+﻿1. Добавил Логические переменные в код
+bool checkingRange = (myInt > 0 && myInt < 6)  // проверка диапазона
+bool checkingMatchesWithFour = (myInt == 4 && command.Length == 1) // проверка совпадения с четырьмя
+bool checkingMatchesWithFive = (myInt == 5 && command.Length == 1) // проверка совпадения с пятью
+if (checkingRange || checkingMatchesWithFour || checkingMatchesWithFive)
+2. Добавил Логические переменные в код
+bool checkingThree = (myInt == 2 && isNumerical2 == true) // проверка двойки
+bool checkingTwo = (myInt == 3 && isNumerical2 == true) // проверка тройки
+bool checkingNumbers = (myInt == 1 || myInt == 4 || myInt == 5) // проверка чисел
+if (checkingThree || checkingTwo || checkingNumbers)
+3. Добавил Логические переменные в код
+bool checkingOnePairElements = (massiv[i] > massiv[i + 1]) // проверка одной пары элементов
+bool checkingSecondPairElements =  (massiv[i + 1] > massiv[i + 2]) // проверка второй пары элементов
+while (checkingOnePairElements || checkingSecondPairElements)
+4. Добавил Логические переменные в код
+bool checkingEqualityNumbers = (massiv[i][j] == '3' || massiv[i][j] == '4' || massiv[i][j] == '5' || massiv[i][j] == '6') // проверка равенства чисел
+if (checkingEqualityNumbers)
+5. Добавил Логические переменные в код
+bool checkingInequalitiesNumvers = (misis[i, j + 1] != "3" && misis[i, j + 1] != "4" && misis[i, j + 1] != "5" && misis[i, j + 1] != "6") // проверка не равенства чисел
+if (checkingInequalitiesNumvers)
+6. Добавил Логические переменные в код
+bool checkingSymbolEqual = (village[h] == '=' && village[h + 1] == '=' && village[h + 2] == '=') // проверка символа равно
+if (checkingSymbolEqual)
+7. Добавил константы в код
+char DELIMITER_IN_LINE = '/' // разделитель в строке
+string[] arrayLines = arraySave.Split(DELIMITER_IN_LINE);
+8. Добавил текстовое сообщения в отдельные переменные
+string textMessageWinner = "majority winner " // Текстовое сообщение победителя
+string textMessageNoWinner = "no winner" //Текстовое сообщение не победителя
+
+            if (checkingQuantity == true)
+            {
+                outputResult = textMessageNoWinner;
+            }
+            else
+            {
+                if (max > 0.5)
+                {
+                    outputResult = textMessageWinner + arrayElement.ToString();
+                }
+                else if (max <= 0.5)
+                {
+                    outputResult = textMessageWinner + arrayElement.ToString();
+                }
+            }
+            return outputResult;
+9. Добавил константы в код
+char SIGN_FOR_SEARCH = '*' // знак для поиска
+            for (int i = 1; i < line.Length; i++)
+            {
+                if (line[i] == SIGN_FOR_SEARCH)
+                {
+                    two = i;
+                    break;
+                }
+            }
+10. Добавил константы в код
+string NAME_DATABASE = "база.txt"
+if (File.Exists(NAME_DATABASE))
+   readfl = new StreamReader(NAME_DATABASE);
+11. Добавил константы в код
+string NAME_DATABASE_PRUDUCT = "данные.txt"
+if (File.Exists(NAME_DATABASE_PRUDUCT))
+   readfl = new StreamReader(NAME_DATABASE_PRUDUCT);
+12. Добавил Логические переменные в код
+bool checkingEmptyValue = ((textBox1.Text=="") || (textBox2.Text=="") || (comboBox1.Text=="") || (comboBox2.Text=="")) // проверка пустого значения
+bool checkingZeroValue = ((numericUpDown1.Value==0)||(numericUpDown2.Value==0)) // проверка нулевого значения
+if (checkingEmptyValue || checkingZeroValue)
