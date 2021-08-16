@@ -22,7 +22,7 @@ if (checkingInequalitiesNumvers)
 bool checkingSymbolEqual = (village[h] == '=' && village[h + 1] == '=' && village[h + 2] == '=') // проверка символа равно
 if (checkingSymbolEqual)
 7. Добавил константы в код
-char DELIMITER_IN_LINE = '/' // разделитель в строке
+const char DELIMITER_IN_LINE = '/' // разделитель в строке
 string[] arrayLines = arraySave.Split(DELIMITER_IN_LINE);
 8. Добавил текстовое сообщения в отдельные переменные
 string textMessageWinner = "majority winner " // Текстовое сообщение победителя
@@ -45,7 +45,7 @@ string textMessageNoWinner = "no winner" //Текстовое сообщение
             }
             return outputResult;
 9. Добавил константы в код
-char SIGN_FOR_SEARCH = '*' // знак для поиска
+const char SIGN_FOR_SEARCH = '*' // знак для поиска
             for (int i = 1; i < line.Length; i++)
             {
                 if (line[i] == SIGN_FOR_SEARCH)
@@ -55,11 +55,11 @@ char SIGN_FOR_SEARCH = '*' // знак для поиска
                 }
             }
 10. Добавил константы в код
-string NAME_DATABASE = "база.txt"
+const string NAME_DATABASE = "база.txt"
 if (File.Exists(NAME_DATABASE))
    readfl = new StreamReader(NAME_DATABASE);
 11. Добавил константы в код
-string NAME_DATABASE_PRUDUCT = "данные.txt"
+const string NAME_DATABASE_PRUDUCT = "данные.txt"
 if (File.Exists(NAME_DATABASE_PRUDUCT))
    readfl = new StreamReader(NAME_DATABASE_PRUDUCT);
 12. Добавил Логические переменные в код
