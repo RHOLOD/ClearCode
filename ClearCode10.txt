@@ -1,0 +1,146 @@
+﻿1. Инициализировал переменныую перед циклом
+            string line = "";
+            for (int i = 0; i < numberElements; i++)
+            {
+                line += arrayStrings[i].ToString();
+            }
+2. Инициализировал переменныую перед сразу после её использования    
+	    int lengthElapsed = 54;
+	    result = lengthElapsed + (L - track[N - 1][0]);
+3. Инициализировал переменныую перед сразу после её использования 
+            int a = H1 - H2;
+            int b = W1 - W2;
+            int n = 0;
+            for (int m = 0; m <= b; m++)
+            {
+                for (int i = 0; i <= a; i++)
+                {
+                    for (int j = 0; j < H2; j++)
+                    {
+                        for (int k = 0; k < W2; k++)
+                        {
+                            if (massiv1[j + i, k + m] == massiv2[j, k])
+                            {
+                                n++;
+                            }
+                        }
+                    }
+                    if (n == H2 * W2)
+                    {
+                        return true;
+                    }
+                    n = 0;
+                }
+            }
+4. Инициализировал переменныую перед сразу после её использования 
+	    int zeroValue = 0;
+            for (int i = 0; i < H1; i++)
+            {
+                for (int j = 0; j < W1; j++)
+                {
+                    massiv1[i, j] = zeroValue;
+                }
+            }
+5. Инициализировал переменныую перед сразу после её использования 
+            int ves = 0;
+            for (int i = N - 1; i > N - k - 1; i--)
+            {
+                ves = ves + nums[i];
+            }
+6. Инициализировал переменныую перед сразу после её использования 
+	    int eventСounter = 0;
+            for (int i = 0; i < nums.Length - 1; i++)
+            {
+                for (int j = i + 1; j < nums.Length; j++)
+                {
+                    if (nums[i] < nums[j])
+                    {
+			eventСounter++;
+                        temp = nums[i];
+                        nums[i] = nums[j];
+                        nums[j] = temp;
+                    }
+                }
+            }
+7. Завершил работу с переменными в блоке кода, присвоив ей "недопустимое" значение.
+            string[] str = line.Split();
+            line = "***ERROR***";
+8. Завершил работу с переменными в блоке кода, присвоив ей "недопустимое" значение.
+            int n = str.Length;
+            bool b = false;
+            for (int i = 1; i < n; i++)
+            {
+                if (str[1].Length == str[i].Length)
+                {
+                    b = true;
+                }
+                else
+                {
+                    b = false;
+                    break;
+                }
+            }
+	    n = -1;
+9. Завершил работу с переменными в блоке кода, присвоив ей "недопустимое" значение.
+            string str = massiv[i];
+            str = str.Replace("+", "1");
+            massiv[i] = str;
+            str = "***ERROR***";
+10.Завершил работу с переменными в блоке кода, присвоив ей "недопустимое" значение.
+            for (int j = 0; j < W; j++)
+            {
+               gig += misis[i, j].ToString();
+            }
+            massiv[i] = gig;
+	    gig = "***ERROR***"
+11.Завершил работу с переменными в блоке кода, присвоив ей "недопустимое" значение.
+            for (int j = 0; j < N; j++)
+            {
+               ki += massivE[k, j].ToString();
+            }
+            massivK[k] = ki;
+	    ki = "***ERROR***";
+12. Завершил работу с переменными в блоке кода, присвоив ей "недопустимое" значение.
+                for (int i = 0; i < rows - 1; i++)
+                {
+                    g = g + double.Parse(dataGridView2.Rows[i].Cells[7].Value.ToString());
+                    j = j + double.Parse(dataGridView2.Rows[i].Cells[6].Value.ToString());
+                }
+                u = "Итого: " + g + " руб.  Общий вес: " + j + " гр.";
+		label1.Text = u;
+		u = "***ERROR***";
+13. Включил в код проверку на предмет допустимости их значений
+                    if (dataGridView1.Rows[i].Cells[3].Value.ToString().ToLower().Contains("гр") == false)
+                    {
+                        MessageBox.Show("Заполните пустые поля"); 
+                    }
+                    else
+                    {
+                        dataGridView1.Rows[i].Cells[6].Value = (Math.Round((double.Parse(dataGridView1.Rows[i].Cells[5].Value.ToString()) / double.Parse(dataGridView1.Rows[i].Cells[2].Value.ToString())), 2)).ToString();
+                    }   
+14. Включил в код проверку на предмет допустимости значений
+            if (textBox1.Text == null || textBox1.Text.ToString() == "")
+            {
+                FileStream myStream = new FileStream(@"база.txt", FileMode.Create);
+                StreamWriter writefl = new StreamWriter(myStream);
+                string result;
+                for (int k = 0; k < dataGridView1.Rows.Count - 1; k++)
+                {
+                    result = string.Format("{0,0}|{1,0}|{2,0}|{3,0}|{4,0}|{5,0}|{6,0}",
+                                    dataGridView1.Rows[k].Cells[0].Value,
+                                    dataGridView1.Rows[k].Cells[1].Value,
+                                    dataGridView1.Rows[k].Cells[2].Value,
+                                    dataGridView1.Rows[k].Cells[3].Value,
+                                    dataGridView1.Rows[k].Cells[4].Value,
+                                    dataGridView1.Rows[k].Cells[5].Value,
+                                    dataGridView1.Rows[k].Cells[6].Value
+                                    );
+                    writefl.WriteLine(result);
+                }
+                writefl.Close();
+            }
+15. Включил в код проверку на предмет допустимости значений
+            if ((s.Contains("9") == true) || (s.Contains("89") == true) || (s.Contains("789") == true) || (s.Contains("6789") == true) || (s.Contains("56789") == true) || (s.Contains("456789") == true) || (s.Contains("3456789") == true) || (s.Contains("23456789") == true))
+                Console.WriteLine("текст совпадает с конечным отрезком ряда 0123456789");
+            else
+                Console.WriteLine("текст не совпадает");
