@@ -1,0 +1,216 @@
+﻿1. Сгрупппировал переменныую counterStructure и код где она используеться вместе
+            int counterStructure = 0;
+	    string str;
+            while (readfl.EndOfStream != true)
+            {
+                if (readfl.EndOfStream == true) return;
+                    str = readfl.ReadLine();
+                    string[] s = str.Split('|');
+                    note[counterStructure].namber = s[0];
+                    note[counterStructure].name = s[1];
+                    note[counterStructure].obem = s[2];
+                    note[counterStructure].edi = s[3];
+                    note[counterStructure].plot = s[4];
+                    note[counterStructure].price = s[5];
+                    note[counterStructure].priceedi = s[6];
+                    counterStructure++;
+            }
+2.Сгрупппировал переменныую u и код где она используеться вместе
+                string u = "";
+                math();
+                int rows = dataGridView2.Rows.Count;
+                double g = 0;
+                double j = 0;
+                for (int i = 0; i < rows - 1; i++)
+                {
+                    g = g + double.Parse(dataGridView2.Rows[i].Cells[7].Value.ToString());
+                    j = j + double.Parse(dataGridView2.Rows[i].Cells[6].Value.ToString());
+                }
+                u = "Итого: " + g + " руб.  Общий вес: " + j + " гр.";
+3.Изменил модификатор доступа у метода на private
+        private void Math()
+        {
+            try
+            {
+                int s = dataGridView2.Rows.Count;
+                for (int i = 0; i < s - 1; i++)
+                {
+                    dataGridView2.Rows[i].Cells[7].Value = (double.Parse(dataGridView2.Rows[i].Cells[2].Value.ToString()) * double.Parse(dataGridView2.Rows[i].Cells[5].Value.ToString()));
+                    if (dataGridView2.Rows[i].Cells[3].Value.ToString().ToLower().Contains("гр") == true)
+                    {
+                        dataGridView2.Rows[i].Cells[6].Value = double.Parse(dataGridView2.Rows[i].Cells[2].Value.ToString());
+                        dataGridView2.Rows[i].Cells[4].Value = "";
+                    }
+                    else
+                        dataGridView2.Rows[i].Cells[6].Value = (double.Parse(dataGridView2.Rows[i].Cells[2].Value.ToString()) * double.Parse(dataGridView2.Rows[i].Cells[4].Value.ToString()));
+                }
+            }
+            catch { }
+        }
+4.Изменил модификатор доступа у метода на private
+        private void Priced()
+        {
+
+            try
+            {
+                int s = dataGridView1.Rows.Count;
+                for (int i = 0; i < s - 1; i++)
+                {
+                    if (dataGridView1.Rows[i].Cells[3].Value.ToString().ToLower().Contains("гр") == true)
+                    {
+                        MessageBox.Show("Заполните пустые поля"); 
+                    }
+                    dataGridView1.Rows[i].Cells[6].Value = (Math.Round((double.Parse(dataGridView1.Rows[i].Cells[5].Value.ToString()) / double.Parse(dataGridView1.Rows[i].Cells[2].Value.ToString())), 2)).ToString();
+                }
+            }
+            catch { }
+        }
+5.Сгрупппировал переменные и код где они используеться вместе
+        readonly float moon_g = -25f; // м/с2
+        readonly float ship_a = 30f;
+        readonly float speed_f = 100.0f;// л/с
+        public void MoveShip (float s) // время в мс
+        {
+            if (status != ShipStatus.play)
+                return;
+            if (power)
+            {
+                fuel -= speed_f * s;
+                if (fuel <= 0) // топливо закончилось
+                {
+                    fuel = 0;
+                    power = false;
+                }
+            }
+
+            if (power)
+                speed += s * ship_a;
+            else
+                speed += s * moon_g;
+            height += s * speed;
+            if (height <= 0)
+            {
+                if (Math.Abs(speed) < 20)
+                    status = ShipStatus.landing;
+                else
+                    status = ShipStatus.crash;
+                PowerOff();
+            }
+            if (height > 500)
+            {
+                status = ShipStatus.flyout;
+                PowerOff();
+            }
+        }
+6.Изменил модификатор доступа у метода на private
+        private void PowerOn()
+        {
+            if (fuel > 0)
+                power = true;
+            else
+                power = false;
+        }
+7.Изменил модификатор доступа у метода на private
+        private void shift_racket(int sx)
+        {
+            int ax1 = racket_x + sx;
+            int ax2 = ax1 + racket.Width;
+            if (side_lx > ax1) ax1 = side_lx;
+            if (side_rx < ax2) ax1 = side_rx - racket.Width;
+            racket_x = ax1;
+            racket.Location = new Point(racket_x, racket_y);
+        }
+8.Изменил модификатор доступа у метода на private
+        private void drop_brick (Label brick)
+        {
+            brick.Visible = false;
+            total_bricks--;
+            if (total_bricks == 0)
+            {
+                timer.Enabled = false;
+                MessageBox.Show("Вы победили!", "Игра окончена!");
+                DialogResult = System.Windows.Forms.DialogResult.OK;
+            }
+        }
+9. Умешьшил область видимости переменной и сгруппировал с кодом
+        int racket_x, racket_y;
+        int racket_shift_x = 10;
+        int ball_x, ball_y;
+        int ball_shift_x = 5;
+        int ball_shift_y = 3;
+        int ball_sx, ball_sy;
+
+        int side_lx, side_rx, side_uy;
+        int total_bricks;
+        private void init_game()
+        {
+            racket_x = racket.Location.X;
+            racket_y = racket.Location.Y;
+            side_lx = label_left.Location.X + label_right.Width;
+            side_rx = label_right.Location.X;
+            side_uy = label_top.Location.X + label_top.Height;
+            ball_x = ball.Location.X;
+            ball_y = ball.Location.Y;
+            ball_sx = ball_shift_x;
+            ball_sy = -ball_shift_y;
+            total_bricks = 5;
+        }
+10. Изменил модификатор доступа у метода на private
+        private void shift_racket(int sx)
+        {
+            int ax1 = racket_x + sx;
+            int ax2 = ax1 + racket.Width;
+            if (side_lx > ax1) ax1 = side_lx;
+            if (side_rx < ax2) ax1 = side_rx - racket.Width;
+            racket_x = ax1;
+            racket.Location = new Point(racket_x, racket_y);
+        }
+11. Изменил модификатор доступа у метода на private
+        private void start_clicker()
+        {
+            clicks = track_count.Value;
+            button_start.Enabled = false;
+            timer.Interval = track_time.Value;
+            timer.Enabled = true;
+        }
+12. Изменил модификатор доступа у метода на private
+        private void make_click()
+        {
+            clicks--;
+            DoMouseClick();
+            if (clicks == 0)
+                stop_cliker();
+        }
+13. Изменил модификатор доступа у метода на private 
+        static bool sound_enabled = true;
+        public static void sound_on()
+        {
+            sound_enabled = true;
+        }
+14. Изменил модификатор доступа у метода на private и сгрупппировал переменную и код вместе
+        int box_left = 6;
+        private void start_game()
+        {
+            Point point = label_start.Location;
+            point.Offset(label_start.Width / 2, label_start.Height / 2);
+            Cursor.Position = PointToScreen(point);
+            Sound.play_start();
+            box_left = 6;
+            label_box1.Visible = true;
+            label_box2.Visible = true;
+            label_box3.Visible = true;
+            label_box4.Visible = true;
+            label_box5.Visible = true;
+            label_box6.Visible = true;
+        }
+15. Изменил модификатор доступа у метода на private 
+        private void restart_game()
+        {
+            Sound.play_fail();
+            DialogResult dr = MessageBox.Show("Выходить за рамки лабиринта нельзя!\n\nБудем еще играть?","Вы проиграли!",
+                MessageBoxButtons.YesNo);
+            if (dr == System.Windows.Forms.DialogResult.Yes)
+                start_game();
+            else
+                this.DialogResult = System.Windows.Forms.DialogResult.Abort;
+        }
