@@ -1,0 +1,41 @@
+﻿1. Поменял массив на коллекцию, обращение стало последовательно.
+            List<int> arrayPen = new List<int>();
+            for (int i = 0; i < k; i++)
+            {
+                arrayPen.Add(1);
+            }
+2. Поменял массив на очередь, обращение стало последовательно.
+            Queue<int> arrayK = new Queue<int>();
+            /......................
+            int sum = 0;
+            foreach (int p in arrayK)
+            {
+                sum = sum + p;
+            }
+3. Поменял массив на коллекцию, обращение стало последовательно.
+            ArrayList massiv2 = new ArrayList();
+            ArrayList massiv3 = new ArrayList();
+
+            for (int i = 0; i < n2; i++)
+            {
+                massiv2.Add(int.Parse(st2[i].ToString()));
+            }
+            for (int i = 0; i < n1; i++)
+            {
+                massiv3.Add(int.Parse(st2[i].ToString()));
+            }
+4. Поменял массив на коллекцию, обращение стало последовательно.
+            ArrayList arrayBalls = new ArrayList();
+            for (int i = 0; i < N; i++)
+            {
+                arrayBalls.Add(Math.Round((double)Votes[i] / (double)sto, 3));
+            }
+5. Поменял массив на коллекцию, обращение стало последовательно.
+	    ArrayList arrayIndexes = new ArrayList();
+            for (int i = 0; i < M - 1; i++)
+            {
+                if (massivNewN[i] == massivNewN[i + 1])
+                {
+		    arrayIndexes.Add(i)
+                }
+            }
