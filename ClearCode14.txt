@@ -1,0 +1,84 @@
+﻿3.1
+1)          // Алгоритм производит поиск ходоков в деревне
+
+                        for (int i = 0; i < village.Length - 4; i++)
+            {
+                if (char.IsDigit(village[i]) == true)
+                {
+                    for (int j = i + 4; j < village.Length; j++)
+                    {
+                        if (char.IsDigit(village[j]) == true)
+                        {
+                            if ((int.Parse(village[i].ToString()) + int.Parse(village[j].ToString())) >= 10)
+                            {
+                                for (int h = i + 1; h <= j - 3; h++)
+                                {
+                                    if (village[h] == '=' && village[h + 1] == '=' && village[h + 2] == '=')
+                                    {
+                                        return true;
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+2)	    // проверка диапозона входящих чисел
+	    if (checkingRange || checkingMatchesWithFour || checkingMatchesWithFive)
+
+3) 	    // Проверка числа на совпадения допустимых значений
+	    if (checkingThree || checkingTwo || checkingNumbers)
+
+4)	    // Проверка допустимых символов
+	    if (checkingSymbolEqual)
+
+5) 	    // Проверка на нулевые значения
+	    if (checkingEmptyValue || checkingZeroValue)
+
+6) 	    // Проверка символа равно "=" у входящей переменной
+	    if (checkingSymbolEqual)
+
+7)          // Проверка на числа 3,4,5
+	    if (checkingInequalitiesNumvers)
+3.2
+1)
+            for (int i = 0; i < N; i++)
+            {
+                if (massivStr[i] != "null")
+                {
+                    massivNew[M] = massivStr[i];
+                    massivNewN[M] = massivN[i];
+                    M++;
+                }
+            }
+2)
+            for (int x = 0; x < size; x++)
+                for (int y = 0; y < size; y++)
+                    map[x, y] = coord_to_position(x, y) + 1;
+            space_x = size - 1;
+            space_y = size - 1;
+            map[space_x, space_y] = 0; 
+3)
+	    int x, y;
+            position_to_coords(position, out x, out y);
+            if ((Math.Abs(space_x - x) + Math.Abs(space_y - y)) != 1)
+                return;
+            map[space_x, space_y] = map[x, y];
+            map[x, y] = 0;
+            space_x = x;
+            space_y = y;
+4)
+            if (!(space_x == size - 1 &&
+                space_y == size - 1))
+                return false;
+            for (int x = 0; x < size; x++)
+                for (int y = 0; y < size; y++)
+                    if (!(x == size - 1 && y == size - 1))
+                        if (map[x, y] != coord_to_position(x, y) + 1)
+                            return false;
+5)
+            if (position < 0) position = 0;
+            if (position > size * size - 1) position = size * size - 1;
+            x = position % size;
+            y = position / size;
