@@ -1,0 +1,49 @@
+﻿1.	// Если произошло столкновение с объектом, увеличиваем счетчик
+        if (collisionOfCubes == true) 
+        {
+            if (OfCounter == false && OfcounterON == true) 
+            {
+                scriptPanel.numberCounter++; 
+                OfCounter = true;
+            }
+2.	// Команда производит вращение объекта вокруг своей оси
+
+	transform.Rotate(changeOfDirection * positionRotationObjectCube * speedRotationCube * Time.deltaTime);
+
+3.	// Команда производит движение от выбранного объекта
+	GetComponent<Rigidbody>().MovePosition(transform.position + -(sphereObject.gameObject.transform.position - transform.position).normalized * stepSpeed * Time.deltaTime); 
+
+4.      // Вычисляет расстояние от объекта
+	var distanceFromTheBall = (sphereObject.transform.position - transform.position).magnitude;
+
+5. 	// Происходит смена движения на противоположное
+	scriptMoveObject.changeOfDirection = scriptMoveObject.changeOfDirection * -1;
+
+6.	// выводит суммарный остаток на счете
+        OleDbDataAdapter sdr = new OleDbDataAdapter("Select sum([Остаток_ на_счете]) as [Cуммарный остаток:] From [Текущее состояние]", myConnection);
+        }
+
+7.	// Выводит телефоны начинающиеся с 908
+	OleDbDataAdapter sdr = new OleDbDataAdapter("Select * From Регистрация Where Номер_телефона LIKE'908%'", myConnection);
+
+8.	// Проивзодиться отбор по численности 
+            var otbor = from x in Program.f1.spisok
+                        where (int.Parse(x.chislen) < chis)
+                        select x;
+
+9.	//Вычисляем для каждого клиента, сколько дней прошло со времени регистрации 
+	OleDbDataAdapter sdr = new OleDbDataAdapter("Select ФИО,DATEDIFF('y',[Дата_регистрации],'1/2/2015') as [Кол-во дней] From [Регистрация] ", myConnection);
+
+10.	//Происходит отбор по площади
+            var otbor = from x in Program.f1.spisok
+                        where (int.Parse(x.sque) < squ)
+                        select x;
+
+11. 	// Сохранние в формате (№ |Cумма | Ставка |%| Дата dd:mm:gggg | Доход | итоговый вклад)
+            for (int a = 0; a < lol; a++)
+            {
+                string viv =  klad[a].nomer  + klad[a].vkad + klad[a].stavka + klad[a].srok + klad[a].year + klad[a].month + klad[a].day + klad[a].dohod() + klad[a].Itogo() ;
+                st[a] = viv;
+            }
+12.     // Сохранние в формате (Сумма кредита | Срок погашения | Процентная ставка | Тип платежа | Ежемесячный аннуитетный платеж )
+              info += {sum:F2}{n}{d}{g}{a:F2};
