@@ -1,0 +1,34 @@
+﻿1. Такое связывание выбрано, чтобы при нажатии кнопки, происходил переход уровня, считываемый с переменной.
+	int counterLevel = 1
+	/..................
+	private void button2_Click(object sender, EventArgs e)
+        {
+            label9.Text = (counterLevel).ToString();
+            if (j == maximumLevel - 1)
+                MessageBox.Show("Конец массива");
+
+            else
+                counterLevel++;
+            label9.Text = (counterLevel).ToString();
+        }
+2. Связывание происходит через вызов метода, в котором считываетья занчение с констант.
+	string EMPTY_VALUE = "";
+	int ZERO_VALUE = 0;
+        public void clearFields() 
+        {
+            textBox2.Text = EMPTY_VALUE;
+            textBox3.Text = EMPTY_VALUE;
+            textBox4.Text = EMPTY_VALUE;
+            numericUpDown1.Value = ZERO_VALUE;
+	}
+3.  Связывание происходит через перенную, которая определяеться самим пользователем в работающией программе.	
+	Color color=Color.Green;
+        private void button3_Click(object sender, EventArgs e) // диалог выбор цвета
+        {
+            if (colorDialog.ShowDialog() == DialogResult.OK)
+            {         
+		color = colorDialog.Color;       
+                button3.BackColor = color;
+                pen.Color = color;
+            }
+        }
